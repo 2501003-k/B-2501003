@@ -20,7 +20,7 @@ public class Main {
         // 처리
 
 
-        // 출력 (필수) <-- 필수니까 제일 1순위로 적기
+        // 출력 (필수) <- 필수니까 제일 1순위로 적기
         System.out.printf("%s님의 나이는 %d살 입니다.", name, age);
 
 
