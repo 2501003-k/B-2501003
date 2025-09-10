@@ -1,4 +1,4 @@
- public class Main {
+ public class sample1 {
      public static void main(String[] args) {
          System.out.print("홍길동");
      }

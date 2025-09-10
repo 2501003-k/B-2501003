@@ -1,5 +1,5 @@
 import java.util.Scanner;
-public class Main { //메소드
+public class sample2 { //메소드
     public static void main(String[] args) {
         Scanner keyboard = new Scanner(System.in);
 
