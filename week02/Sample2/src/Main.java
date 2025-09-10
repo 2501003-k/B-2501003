@@ -3,7 +3,7 @@ public class Main { //메소드
     public static void main(String[] args) {
         Scanner keyboard = new Scanner(System.in);
 
-        String name = "홍길동";// 선언문 (준비)
+        String name = "홍길동"; // 선언문 (준비)
 
         name = keyboard.nextLine();// Data 입력
 

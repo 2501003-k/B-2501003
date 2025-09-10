@@ -14,7 +14,7 @@ public class Main {
         ch = keyboard.next().charAt(0);
         //처리
 
-        //출력
+        //출력 <-- 필수니까 제일 1순위로 적기
         System.out.printf("입력한 문자 %c의 ASCII 코드는 %h이다.\n", ch, ch);
     }
 }

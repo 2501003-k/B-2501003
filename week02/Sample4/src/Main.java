@@ -22,7 +22,7 @@ public class Main {
         result = first * second;
 
 
-        // 출력 (필수) <- 필수니까 제일 1순위로 적기
+        // 출력 (필수) <-- 필수니까 제일 1순위로 적기
         System.out.printf("%,d * %,d = %,d\n", first, second, result);
     }
 }

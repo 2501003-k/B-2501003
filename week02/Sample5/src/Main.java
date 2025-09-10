@@ -28,7 +28,7 @@ public class Main {
 
         //처리
 
-        //출력
+        //출력 <-- 필수니까 제일 1순위로 적기
         System.out.printf("%s님의 나이는 %d살 입니다.\n", name, age);
         System.out.printf("%s님의 키는 %.1f 입니다.\n", name, height);
         System.out.printf("%s님의 몸무게는 %.1f 입니다.\n", name, weight);

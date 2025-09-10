@@ -22,7 +22,7 @@ public class Main {
         //처리
         result = gender == 'M' ? '남' : '여';
 
-        //출력
+        //출력 <-- 필수니까 제일 1순위로 적기
         System.out.printf("%s님의 나이는 %d살 입니다.\n", name, age);
         System.out.printf("%s님의 성별은 %c(%c자) 입니다.", name, gender, result);
 
