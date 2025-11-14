@@ -146,7 +146,7 @@ public class Main {
 
 
         System.out.println("***********************************************");
-        System.out.println(" 학번   이름  국어  영어   수학  총점   평군   등수 ");
+        System.out.println(" 학번   이름  국어  영어   수학  총점   평균   등수 ");
         System.out.println("***********************************************");
         for (i = 0; i < name.length; i++) {
             System.out.printf("%7s %3s  %3d  %3d  %3d  %3d   %5.1f %2d\n",
