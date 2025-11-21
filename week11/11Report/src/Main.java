@@ -71,21 +71,18 @@ public class Main {
                     i--; // i를 증가시키지 않고 내림으로써 다시 동일 인물의 번호를 입력하게 되돌아감.
                     continue; // continue는 for 문의 증감식 부분으로 이동
             }
-
             System.out.print("사용량(소수점 1자리 입력): ");
             amount[i] = keyboard.nextDouble();
 
-
             // 처리
-            int amt = (int) amount[i];  // 사용량 절사 시키기
-            money[i] = BASIC + (amt * priceValue); // 기본료 + (절사된 사용량 * 단가)
+            int amt = (int)Math.round(amount[i]); // 사용량 반올림
+            int useMoney = amt * priceValue;     // 사용금액
+            money[i] = useMoney;
 
-            double tempTax = money[i] * (taxRate / 100.0); // 세금 값 처리
-            tax[i] = (int)(tempTax / 10) * 10;
+            double tempTax = (BASIC + useMoney) * (taxRate / 100.0);
+            tax[i] = (int)(tempTax / 10) * 10;   // 세금 절사
 
-            total[i] = money[i] + tax[i]; // 총 납부액
-
-            System.out.println();
+            total[i] = BASIC + useMoney + tax[i]; // 납부액
         }
 
         // 출력
@@ -93,9 +90,9 @@ public class Main {
         System.out.println("-------------------------------------------------------------------------------------");
         System.out.println("번호   이름     구분        사용량       사용금액       TAX        납부액       비고");
         System.out.println("-------------------------------------------------------------------------------------");
-
         for (int i = 0; i < 10; i++) {
-            System.out.printf("%4s  %-4s  %-5s   %7.1f   %,10d   %,8d   %,10d     %s\n", user[i][0], user[i][1], gu[i],
+            System.out.printf("%4s  %-4s  %-5s   %7.1f   %,10d   %,8d   %,10d     %s\n",
+                    user[i][0], user[i][1], gu[i],
                     amount[i], money[i], tax[i], total[i], note[i]);
         }
         System.out.println("-------------------------------------------------------------------------------------");
